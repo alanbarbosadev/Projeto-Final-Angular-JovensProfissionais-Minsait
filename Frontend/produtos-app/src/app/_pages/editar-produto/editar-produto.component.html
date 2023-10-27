@@ -1,0 +1,75 @@
+<h4 class="ms-5">Editar Produto</h4>
+<hr class="mx-5" />
+<div class="mb-5"></div>
+
+<form [formGroup]="editarProdutoForm">
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <label class="form-label fw-bold">Código de Barras</label>
+      <input type="text" class="form-control" formControlName="codigoBarras" />
+      <div
+        *ngIf="
+          editarProdutoForm.get('codigoBarras')?.invalid &&
+          editarProdutoForm.get('codigoBarras')?.touched
+        "
+      >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('codigoBarras')?.errors?.['required']"
+          >Campo obrigatório!</small
+        >
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="form-label fw-bold">Nome</label>
+      <input type="text" class="form-control" formControlName="nome" />
+      <div
+        *ngIf="
+          editarProdutoForm.get('nome')?.invalid &&
+          editarProdutoForm.get('nome')?.touched
+        "
+      >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('nome')?.errors?.['required']"
+          >Campo obrigatório!</small
+        >
+      </div>
+    </div>
+    <div class="row mb-5">
+      <label class="form-label fw-bold">Preço</label>
+      <input type="number" class="form-control" formControlName="preco" />
+      <div
+        *ngIf="
+          editarProdutoForm.get('preco')?.invalid &&
+          editarProdutoForm.get('preco')?.touched
+        "
+      >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('preco')?.errors?.['required']"
+          >Campo obrigatório!</small
+        >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('preco')?.errors?.['min']"
+          >O Preço deve ser maior que 0</small
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <button
+          class="btn btn-primary me-2 mb-2"
+          (click)="editarProduto()"
+          [disabled]="!editarProdutoForm.valid"
+        >
+          Editar
+        </button>
+        <button class="btn btn-danger mb-2" (click)="cancelar()">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

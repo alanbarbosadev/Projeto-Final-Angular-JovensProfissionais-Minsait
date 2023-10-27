@@ -1,0 +1,67 @@
+<h4 class="ms-5">Produtos</h4>
+<hr class="mx-5" />
+<div class="mb-5"></div>
+
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col" class="text-center">
+          Código de Barras <i class="bi bi-upc"></i>
+        </th>
+        <th scope="col" class="text-center">Nome</th>
+        <th scope="col" class="text-center">
+          Preço <i class="bi bi-currency-dollar"></i>
+        </th>
+        <th scope="col" class="text-center"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-light" *ngFor="let produto of produtos">
+        <td class="align-middle text-center">{{ produto.codigoBarras }}</td>
+        <td class="align-middle text-center">{{ produto.nome }}</td>
+        <td class="align-middle text-center">{{ produto.preco }}</td>
+        <td>
+          <a
+            type="button"
+            class="btn btn-primary me-2 mb-2"
+            routerLink="/produtos/editar/{{ produto.id }}"
+          >
+            <i class="bi bi-pencil-square"></i>
+          </a>
+          <a
+            type="button"
+            class="btn btn-danger mb-2"
+            (click)="deletarProduto(produto, deletarTemplate)"
+          >
+            <i class="bi bi-trash"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #deletarTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Deletar Produto</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="confirmaDelecaoRef.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body align-middle text-center mt-5">
+    <h5>Tem certeza que deseja deletar este produto?</h5>
+  </div>
+  <div class="col-4">
+    <div class="row">
+      <button class="btn btn-primary m-5" (click)="confirmarDelecao()">
+        Deletar
+      </button>
+    </div>
+  </div>
+</ng-template>
