@@ -23,3 +23,28 @@
  </div>
 </div>
 <br>
+<h2 align="center">Ferramentas Utilizadas</h2>
+<br>
+<p>- Visual Studio Code [https://code.visualstudio.com/download]</p>
+<p>- IntelliJ Community Edition [https://www.jetbrains.com/pt-br/idea/download/]</p>
+<p>- MySql [https://www.mysql.com/downloads/]</p>
+<p>- MySql Workbench [https://dev.mysql.com/downloads/workbench/]</p>
+<br>
+<h2 align="center">Bibliotecas Utilizadas</h2>
+<br>
+<p>- bootstrap 5.3.2 [https://getbootstrap.com]</p>
+<p>- ngx-bootrap 11.x.x [https://ng-bootstrap.github.io]</p>
+<p>- bootswatch 5.3.2 [https://bootswatch.com/]</p>
+<p>- sweetalert2 [https://sweetalert2.github.io/]</p>
+<br>
+
+<h2 align="center">Sobre o Projeto</h2>
+<p>O intuito do projeto é consumir uma API de produtos com o Angular 2+</p>
+<br>
+<p><b>Funcionalidades Implementadas</b></p>
+<br>
+<p>- Cadastrar produtos com devida validação das informações</p>
+<p>- Editar os produtos cadastrados</p>
+<p>- Deletar produtos cadastrados</p>
+<p>- Listar todos os produtos já cadastrados</p>
+<br>
