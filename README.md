@@ -59,7 +59,7 @@
 <br>
 <p><b>Backend</b></p>
 <br>
-<p>- Com o projeto aberto no IntelliJ, Eclipse ou qualquer IDEA Java de sua preferência, navegue até o arquivo application.properties no diretório "resources" e modifique os dados de acordo com sua conexão local do MySql. Obs: Verifique se as dependências foram instalador pelo Maven no arquivo pom.xml no diretório raiz</p>
+<p>- Com o projeto aberto no IntelliJ, Eclipse ou qualquer IDE Java de sua preferência, navegue até o arquivo application.properties no diretório "resources" e modifique os dados de acordo com sua conexão local do MySql. Obs: Verifique se as dependências foram instalador pelo Maven no arquivo pom.xml no diretório raiz</p>
 <br>
 <h2 align="center">Imagens do Aplicativo</h2>
 <br>
