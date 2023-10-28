@@ -5,7 +5,7 @@
 <form [formGroup]="cadastroProdutoForm">
   <div class="container mt-5">
     <div class="row mb-3">
-      <label class="form-label fw-bold">Código de Barras:</label>
+      <label class="form-label fw-bold">Código de Barras</label>
       <input type="text" class="form-control" formControlName="codigoBarras" />
       <div
         *ngIf="
@@ -18,10 +18,15 @@
           *ngIf="cadastroProdutoForm.get('codigoBarras')?.errors?.['required']"
           >Campo obrigatório!</small
         >
+        <small
+          class="text-danger"
+          *ngIf="cadastroProdutoForm.get('codigoBarras')?.errors?.['minlength']"
+          >O código de barras do produto deve ter ao menos 5 caracteres</small
+        >
       </div>
     </div>
     <div class="row mb-3">
-      <label class="form-label fw-bold">Nome:</label>
+      <label class="form-label fw-bold">Nome</label>
       <input type="text" class="form-control" formControlName="nome" />
       <div
         *ngIf="
@@ -33,6 +38,11 @@
           class="text-danger"
           *ngIf="cadastroProdutoForm.get('nome')?.errors?.['required']"
           >Campo obrigatório!</small
+        >
+        <small
+          class="text-danger"
+          *ngIf="cadastroProdutoForm.get('nome')?.errors?.['minlength' || 'maxlength']"
+          >O nome do produto deve ter entre 3 e 50 caracteres</small
         >
       </div>
     </div>

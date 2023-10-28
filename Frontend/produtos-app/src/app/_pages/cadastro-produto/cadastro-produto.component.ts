@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Produto } from 'src/app/_models/produto.model';
 import { ProdutoService } from 'src/app/_services/produto.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cadastro-produto',
@@ -18,8 +19,15 @@ export class CadastroProdutoComponent {
     private formBuilder: FormBuilder
   ) {
     this.cadastroProdutoForm = formBuilder.group({
-      codigoBarras: [null, [Validators.required]],
-      nome: [null, [Validators.required]],
+      codigoBarras: [null, [Validators.required, Validators.minLength(5)]],
+      nome: [
+        null,
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(50),
+        ],
+      ],
       preco: [null, [Validators.required, Validators.min(0.01)]],
     });
   }
@@ -33,6 +41,7 @@ export class CadastroProdutoComponent {
     };
     this.produtoService.cadastrarProduto(produto).subscribe(() => {
       this.router.navigate(['produtos/listagem']);
+      Swal.fire('Produto Cadastrado com Sucesso!');
     });
   }
 

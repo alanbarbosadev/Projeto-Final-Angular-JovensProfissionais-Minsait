@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Produto } from 'src/app/_models/produto.model';
 import { ProdutoService } from 'src/app/_services/produto.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-listagem-produtos',
@@ -40,6 +41,7 @@ export class ListagemProdutosComponent implements OnInit {
       .subscribe(() => {
         this.confirmaDelecaoRef.hide();
         this.ngOnInit();
+        Swal.fire('Produto Deletado com Sucesso!');
       });
   }
 }

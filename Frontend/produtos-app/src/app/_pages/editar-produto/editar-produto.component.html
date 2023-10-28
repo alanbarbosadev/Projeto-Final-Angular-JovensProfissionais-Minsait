@@ -18,6 +18,11 @@
           *ngIf="editarProdutoForm.get('codigoBarras')?.errors?.['required']"
           >Campo obrigatório!</small
         >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('codigoBarras')?.errors?.['minlength']"
+          >O código de barras do produto deve ter ao menos 5 caracteres</small
+        >
       </div>
     </div>
     <div class="row mb-3">
@@ -33,6 +38,11 @@
           class="text-danger"
           *ngIf="editarProdutoForm.get('nome')?.errors?.['required']"
           >Campo obrigatório!</small
+        >
+        <small
+          class="text-danger"
+          *ngIf="editarProdutoForm.get('nome')?.errors?.['minlength' || 'maxlength']"
+          >O nome do produto deve ter entre 3 e 50 caracteres</small
         >
       </div>
     </div>
