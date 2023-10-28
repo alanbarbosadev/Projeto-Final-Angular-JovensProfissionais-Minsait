@@ -41,6 +41,9 @@
 <h2 align="center">Sobre o Projeto</h2>
 <p>O intuito do projeto é consumir uma API de produtos implementada com Spring Boot (Versão 3.0.12) e MySql (Versão 8.0) com o Angular 12+</p>
 <br>
+<h4 align="center">A Entidade Produto</h4>
+<div align="center"><img width="960" alt="Produto-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/b146fcec-8865-477b-9c5b-028f621b4c91"></div>
+<br>
 <p><b>Funcionalidades Implementadas</b></p>
 <br>
 <p>- Cadastrar produtos com devida validação das informações</p>
