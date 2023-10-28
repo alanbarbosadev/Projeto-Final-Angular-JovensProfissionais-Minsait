@@ -44,8 +44,8 @@
 <p><b>Funcionalidades Implementadas</b></p>
 <br>
 <p>- Cadastrar produtos com devida validação das informações</p>
-<p>- Editar os produtos cadastrados</p>
-<p>- Deletar produtos cadastrados</p>
+<p>- Editar os produtos cadastrados com devida validação das informações</p>
+<p>- Deletar produtos cadastrados com confirmação</p>
 <p>- Listar todos os produtos já cadastrados</p>
 <br>
 <h2 align="center">Para Executar o Projeto</h2>
@@ -58,16 +58,20 @@
 <br>
 <p>- Com o projeto aberto no IntelliJ, Eclipse ou qualquer IDEA Java de sua preferência, navegue até o arquivo application.properties no diretório "resources" e modifique os dados de acordo com sua conexão local do MySql. Obs: Verifique se as dependências foram instalador pelo Maven no arquivo pom.xml no diretório raiz</p>
 <br>
-<h2 align="center">Imagens</h2>
+<h2 align="center">Imagens do Aplicativo</h2>
 <br>
 <h4 align="center">Início</h4>
-<div align="center"><img width="960" alt="Inicio-Minsait" src="https://user-images.githubusercontent.com/81317494/220684311-4d723d67-5a53-4b7b-986f-8ba770ddb722.png"></div>
+<div align="center"><img width="960" alt="Inicio-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/ac639d89-3d41-4e28-bd38-bf43615cb41c"></div>
 <br>
 <h4 align="center">Listar</h4>
-<div align="center"><img width="960" alt="Listar-Minsait" src="https://user-images.githubusercontent.com/81317494/220685202-b786956f-2ad3-49b3-adb9-5052decd5f43.png"></div>
+<div align="center"><img width="960" alt="Listar-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/0fb13847-ae59-4fad-84ef-9255cfc90e5b"></div>
 <br>
 <h4 align="center">Cadastro</h4>
-<div align="center"><img width="960" alt="Cadastro-Minsait" src="https://user-images.githubusercontent.com/81317494/220685561-9705b189-50cd-4a61-8ad0-b903f25827e9.png"></div>
+<div align="center"><img width="960" alt="Cadastro-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/760eb353-25d5-4e32-b905-317826fb5eeb"></div>
 <br>
-<h4 align="center">Detalhes</h4>
-<div align="center"><img width="960" alt="Detalhes-Minsait" src="https://user-images.githubusercontent.com/81317494/220685926-12998ad9-7652-4eaf-95e3-942e2552f21a.png"></div>
+<h4 align="center">Validações</h4>
+<div align="center"><img width="960" alt="Validacoes-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/66997c0b-31bd-4eff-b9cf-d59d8a47ff07"></div>
+<h4 align="center">Editar</h4>
+<div align="center"><img width="960" alt="Editar-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/40b3e3e2-e50e-4532-9a50-87ff168c981e"></div>
+<h4 align="center">Confirmação de Deleção</h4>
+<div align="center"><img width="960" alt="ConfimarcaoDelecao-Minsait" src="https://github.com/alanbarbosadev/Projeto-Final-Angular-JovensProfissionais-Minsait/assets/81317494/36c460d5-9bcc-4084-8ab4-c1f0890d64d9"></div>
